@@ -11,12 +11,13 @@
 <body>
     <centerer>
         <input type="text" placeholder="What's your name?" id="myInput">
-        <button type="button" onclick="getInputValue();">Submit</button>
-        &nbsp;
-        <button onclick ="location.href = 'index.html';">Proceed</button>
+        <button type="button" onclick="update()">Submit and Proceed</button>
         <script>
+            function update () {
             let yourName = document.getElementById("myInput").value
-            localStorage.setItem("user's_name", firstStartup);
+            localStorage.setItem("user's_name", yourName);
+            location.href = 'index.html';
+            }
         </script>
     </centerer>
 </body>
