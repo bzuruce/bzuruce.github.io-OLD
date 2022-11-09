@@ -37,8 +37,8 @@ if (minute >= 0 && minute <= 9){
 console.log(ampm)
 console.log(hour)
 //creates time
-let name =  localStorage.getItem("user's_name")
-let dgh = date + " - " + greeting + name
+let raw_name = localStorage.getItem("user's_name")
+let dgh = date + " - " + greeting + ", " + raw_name
 // get name 
 let time = hour + ":" + minute + " "
 document.getElementById("day").innerHTML = dgh;
