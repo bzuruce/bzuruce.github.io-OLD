@@ -1,10 +1,10 @@
-if (firstStartup != false){
-  location.href = "startup.html"
-}
-let firstStartup = false;
-localStorage.setItem("determine_first_startup", firstStartup);
-let firstTime = localStorage.getItem("determine_first_startup");
-//Launches Setup on first start
+//if (firstStartup != false){
+  //location.href = "startup.html"
+//}
+//let firstStartup = false;
+//localStorage.setItem("determine_first_startup", firstStartup);
+//let firstTime = localStorage.getItem("determine_first_startup");
+//Launches Setup on first start- Off until further notice
 const todays_date = new Date()
 let days = [ "Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 console.log(days)
