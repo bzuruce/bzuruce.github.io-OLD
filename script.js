@@ -1,3 +1,10 @@
+if (firstStartup != false){
+  location.href = "startup.html"
+}
+let firstStartup = false;
+localStorage.setItem("determine_first_startup", firstStartup);
+let firstTime = localStorage.getItem("determine_first_startup");
+//Launches Setup on first start
 const todays_date = new Date()
 let days = [ "Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 console.log(days)
@@ -30,16 +37,9 @@ if (minute >= 0 && minute <= 9){
 console.log(ampm)
 console.log(hour)
 //creates time
-let queryString = window.location.search;
-let urlParams = new URLSearchParams(queryString);
-let raw_name = urlParams.get('name')
-name = ", " + raw_name
-if (name = ", null"){
-    name = ""
-}
-// get name from website URL
+let name =  localStorage.getItem("user's_name")
 let dgh = date + " - " + greeting + name
-
+// get name 
 let time = hour + ":" + minute + " "
 document.getElementById("day").innerHTML = dgh;
 document.getElementById("time").innerHTML = time;
