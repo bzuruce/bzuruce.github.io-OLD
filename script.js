@@ -1,10 +1,7 @@
-//if (firstStartup != false){
-  //location.href = "startup.html"
-//}
-//let firstStartup = false;
-//localStorage.setItem("determine_first_startup", firstStartup);
-//let firstTime = localStorage.getItem("determine_first_startup");
-//Launches Setup on first start- Off until further notice
+let firstTime = localStorage.getItem("determine_first_startup");
+if (firstTime == null){
+  location.href = "startup.html"
+}//Launches Setup on first start
 const todays_date = new Date()
 let days = [ "Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 console.log(days)
@@ -38,7 +35,11 @@ console.log(ampm)
 console.log(hour)
 //creates time
 let raw_name = localStorage.getItem("user's_name")
-let dgh = date + " - " + greeting + ", " + raw_name
+display_name = ", " + raw_name
+if (display_name == ", null" || display_name == ", "){
+  display_name = ""
+}
+let dgh = date + " - " + greeting + display_name
 // get name 
 let time = hour + ":" + minute + " "
 document.getElementById("day").innerHTML = dgh;

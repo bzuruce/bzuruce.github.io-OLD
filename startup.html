@@ -16,6 +16,8 @@
             function update () {
             let yourName = document.getElementById("myInput").value
             localStorage.setItem("user's_name", yourName);
+            let firstStartup = false;
+            localStorage.setItem("determine_first_startup", firstStartup);
             location.href = 'index.html';
             }
         </script>
