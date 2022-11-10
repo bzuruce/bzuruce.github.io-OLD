@@ -2,6 +2,11 @@ let firstTime = localStorage.getItem("determine_first_startup");
 if (firstTime == null){
   location.href = "startup.html"
 }//Launches Setup on first start
+let toDo = localStorage.getItem("todo")
+if (toDo == "null" || toDo == ""){
+  toDo = "You're Good to Go!"
+}
+//gets your Todo
 const todays_date = new Date()
 let days = [ "Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 console.log(days)
@@ -45,6 +50,7 @@ let time = hour + ":" + minute + " "
 document.getElementById("day").innerHTML = dgh;
 document.getElementById("time").innerHTML = time;
 document.getElementById("ampm").innerHTML = ampm;
+document.getElementById("todo").innerHTML = toDo;
 refreshtime = 60 - todays_date.getSeconds()
 setTimeout(function(){
    window.location.reload(1);

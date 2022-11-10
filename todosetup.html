@@ -10,15 +10,15 @@
 
 <body>
     <centerer>
-        <input type="text" placeholder="What's your name?" id="myInput">
+        <input type="text" placeholder="What do you need to do today? " id="myInput">
         <button type="button" onclick="update()">Submit and Proceed</button>
         <script>
             function update () {
-            let yourName = document.getElementById("myInput").value
-            localStorage.setItem("user's_name", yourName);
+            let yourToDo = document.getElementById("myInput").value
+            localStorage.setItem("todo", yourToDo);
             let firstStartup = false;
             localStorage.setItem("determine_first_startup", firstStartup);
-            location.href = 'todosetup.html';
+            location.href = 'index.html';
             }
         </script>
     </centerer>
