@@ -10,15 +10,13 @@
 
 <body>
     <centerer>
-        <input type="text" placeholder="What's your name?" id="myInput">
+        <input type="text" placeholder="Enter the name of the URL of the Website you visit most." id="myInput">
         <button type="button" onclick="update()">Submit and Proceed</button>
         <script>
             function update () {
-            let yourName = document.getElementById("myInput").value
-            localStorage.setItem("user's_name", yourName);
-            let firstStartup = false;
-            localStorage.setItem("determine_first_startup", firstStartup);
-            location.href = 'todosetup.html';
+            let URLname = document.getElementById("myInput").value
+            localStorage.setItem("URLname", URLname)
+            location.href="quicklinkurl.html"
             }
         </script>
     </centerer>

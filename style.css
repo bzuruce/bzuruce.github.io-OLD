@@ -7,6 +7,12 @@ line-height: 1;
 bigtitle{
   font-size: 10em;
 }
+lessbigtitle{
+  font-size: 4em;
+}
+mediumtitle{
+  font-size: 2em;
+}
 button{
   bottom: 0;
   padding: 10px;
