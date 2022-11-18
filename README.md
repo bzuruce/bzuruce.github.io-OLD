@@ -1,4 +1,4 @@
-# Try it: bzuruce.github.io
+# Try it: newtab.github.io
 # New Tab
 I am developing a usable new tab page. It is Meant to be simple and lack less useful features. This is Updated Daily with little and big updates. 
 The Previous Major Release Notes are:
