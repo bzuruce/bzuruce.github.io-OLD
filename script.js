@@ -1,6 +1,6 @@
 let firstTime = localStorage.getItem("determine_first_startup");
 if (firstTime == null){
-  location.href = "startup.html"
+  location.href = "setup.html"
 }//Launches Setup on first start
 let toDo = localStorage.getItem("todo")
 if (toDo == "null" || toDo == ""){
@@ -8,6 +8,10 @@ if (toDo == "null" || toDo == ""){
 }
 let URLname = localStorage.getItem("URLname")
 let URLlink = localStorage.getItem("URLlink")
+if (URLname == "" || URLlink == ""){
+  URLname = "Your Quick Link isn't set up. Click here to set it up."
+  URLlink = "https://bzuruce.github.io/quicklinkname.html"
+}
 //gets your Todo
 const todays_date = new Date()
 let days = [ "Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
