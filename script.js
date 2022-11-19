@@ -6,6 +6,8 @@ let toDo = localStorage.getItem("todo")
 if (toDo == "null" || toDo == ""){
   toDo = "You're Good to Go!"
 }
+let URLname = localStorage.getItem("URLname")
+let URLlink = localStorage.getItem("URLlink")
 //gets your Todo
 const todays_date = new Date()
 let days = [ "Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
@@ -51,6 +53,7 @@ document.getElementById("day").innerHTML = dgh;
 document.getElementById("time").innerHTML = time;
 document.getElementById("ampm").innerHTML = ampm;
 document.getElementById("todo").innerHTML = toDo;
+document.getElementById("ql").innerHTML = URLname;
 refreshtime = 60 - todays_date.getSeconds()
 setTimeout(function(){
    window.location.reload(1);
