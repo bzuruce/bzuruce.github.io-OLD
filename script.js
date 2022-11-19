@@ -8,7 +8,7 @@ if (toDo == "null" || toDo == ""){
 }
 let URLname = localStorage.getItem("URLname")
 let URLlink = localStorage.getItem("URLlink")
-if (URLname == "" || URLlink == ""){
+if ( URLname == "" || URLlink == ""|| URLname == "null" || URLlink == "null"){
   URLname = "Your Quick Link isn't set up. Click here to set it up."
   URLlink = "https://bzuruce.github.io/quicklinkname.html"
 }

@@ -50,7 +50,9 @@ input:active{
 
 }
 important{
+  display: inline-block;
+  justify-content: center;
   border-radius: 20px;
   padding: 40px;
-  background-color: #f49797
+  background-color: #f5bcbc
 }
