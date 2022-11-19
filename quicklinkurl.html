@@ -11,8 +11,9 @@
 
 <body>
     <centerer>
-        <input type="text" placeholder="Enter the URL of the Website you visit most." id="myInput">
-        <button type="button" onclick="update()">Submit and Proceed</button>
+        <input type="text" placeholder="Enter the URL of the Website you visit most" id="myInput">
+        <button type="button" onclick="update()">Submit and Proceed</button></centerer>
+        <centerer><important>IMPORTANT: Include your URL with https://</important></centerer>
         <script>
             function update () {
             let URLname = document.getElementById("myInput").value
@@ -20,7 +21,6 @@
             location.href = 'setup.html';
             }
         </script>
-    </centerer>
 </body>
 
 </html>
