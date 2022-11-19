@@ -13,6 +13,9 @@ lessbigtitle{
 mediumtitle{
   font-size: 2em;
 }
+lessmediumtitle{
+  font-size: 1.5em;
+}
 button{
   bottom: 0;
   padding: 10px;
